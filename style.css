@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    isolation: isolate;
+    padding: 3vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: url("image background.png") center / cover no-repeat fixed;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+body {
+    font-family:"Chelsea Market", system-ui;
+    font-weight:900;
+}
+button{
+    cursor: pointer;
+    padding: 2vh;
+    border-radius: 1vh;
+    font-size: 15px;
+    font-family:"Chelsea Market", system-ui;
+    border: 3px solid rgb(129, 31, 31);
+    background-color: #dfdede;
+}
+
+button:hover {
+    background-color: #afaeae;
+}
+button:active {
+    box-shadow: inset 0 0 5px #000000;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family:"Chelsea Market", system-ui;
+}
+a:hover{
+    text-decoration: underline;
+}
+h1{
+    text-align: center;
+    padding: 1vh;
+    margin-bottom: 5vh;
+    font-family:fantasy;
+    font-size: 10vh;
+    text-decoration: underline rgb(129, 31, 31);
+}
+.finPartie{
+    text-align: center;
+    padding: 1vh;
+    margin-bottom: 5vh;
+    font-size: 6vh;
+}
+p{
+    padding: 1vh;
+}
+.formConnexion, .formInscription, .formAccueil {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(148, 149, 148);
+    padding: 20px;
+    border-radius: 10px;
+    width: 40vw;
+    gap: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid rgb(129, 31, 31);
+}
+input {
+    padding:3px;
+}
+.messageErreur {
+    color: #8b0000;
+    text-align: center;
+}
+.jeu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5vh;
+}
+.jeuBtns{
+    margin-left: auto;
+}
+.btnsJeu{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    justify-self: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.btnDeconnexion{
+    justify-self: center;
+    margin-top: 5vh;
+}
+.jeuDonnees{
+    font-size: larger;
+}
+.numeroJour{
+    font-size: 25px;
+    border: 5px solid rgb(129, 31, 31);
+}
+.resultat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+ul, li{
+    margin-left: 10px;
+    
+}
+ul{
+    margin-bottom: 5vh;
+}
+h2{
+    margin-bottom: 5vh;
+}
+.msgAttention{
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+}
+.msgResultat{
+    margin-bottom: 5vh;
+}
+
+.resultatPartie{
+    display: inline-block;
+    font-size: 25px;
+    border: 5px solid rgb(129, 31, 31);
+    padding: 1vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+.emote{
+    display: inline-block;
+    transform: scale(1.5);
+}
